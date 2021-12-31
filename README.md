@@ -15,4 +15,3 @@ Heavily Referenced [CannibalMeals from Mlie](https://github.com/emipa606/Canniba
 Disallowing human meat in bills menu will disallow the meals from using any more human meat than required (i.e. simple meals wont use any more than 1 piece).
 
 Heavily Referenced [CannibalMeals from Mile](https://github.com/emipa606/CannibalMeals) and the game's xml files while writing this.
-
