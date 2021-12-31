@@ -10,5 +10,16 @@
 	<description>Have a colony of cannibals that eat the bodies of their victims too quickly? Put them on a diet!
 	
 This mod adds a new type of simple meal created from a minimum of 1 human meat. These meals can then be limited to exactly 1 human meat per meal by disallowing human meat in the bills menu.
+
+This mod add the following meals;
+
+Simple cannibal meals require 1 human meat + anything else.
+Fine cannibal meals require 2 human meat + other meats + veg.
+lavish cannibal meals require 4 human meat + other meats + veg.
+
+Disallow human meat in the bills menu to restrict the meals to minimum required human meat (and keep the cannibals on their diet).
+
+On [Github](https://github.com/Legitra/Diet_Cannibalism_Mod)
+
 	</description>
 </ModMetaData>
