@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<ThingDef ParentName="MealCooked">
+		<defName>Diet_CanSimpleMeal</defName>
+		<label>Simple Cannibal Meal</label>
+		<description>Simple meal cooked with at least 1 piece of human meat.</description>
+		<graphicData>
+		  <texPath>Things/Item/Meal/Simple</texPath>
+		  <graphicClass>Graphic_MealVariants</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>15</MarketValue>
+		  <WorkToMake>300</WorkToMake>
+		  <Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+		  <preferability>MealSimple</preferability>
+		  <ingestEffect>EatVegetarian</ingestEffect>
+		  <ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+</Defs>

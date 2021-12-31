@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- =====Base Definition===== -->
+	<RecipeDef Name="Diet_CanMealBaseDef" Abstract="True">
+		<workSpeedStat>CookSpeed</workSpeedStat>
+		<requiredGiverWorkType>Cooking</requiredGiverWorkType>
+		<effectWorking>Cook</effectWorking>
+		<soundWorking>Recipe_CookMeal</soundWorking>
+		<allowMixingIngredients>true</allowMixingIngredients>
+		<ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+		<workSkill>Cooking</workSkill>
+	</RecipeDef>
+	<!-- =====Base Ingredients===== -->
+	<RecipeDef Name="Diet_CanMealBase" ParentName="Diet_CanMealBaseDef" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>FoodRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	<!-- =====Base Cooking===== -->
+	<RecipeDef Name="Diet_CanMealCook" ParentName="Diet_CanMealBase" Abstract="True">
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>Campfire</li>
+		</recipeUsers>
+	</RecipeDef>
+	<!-- =====Cannibal Meal===== -->
+	<RecipeDef Name="Diet_CanSimpleMeal" ParentName="Diet_CanMealCook">
+		<defName>Diet_CanSimpleMeal</defName>
+		<label>Simple Cannibal Meal</label>
+		<description>Cook a simple meal containing at least 1 piece of human meat. Disallow human meat in recipe menu to limit meals to 1 piece of human meat.</description>
+		<jobString>Cooking a simple cannibal meal</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.05</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>FoodRaw</li>
+				  </categories>
+				</filter>
+				<count>0.45</count>
+			  </li>
+		</ingredients>
+		<products>
+			<Diet_CanSimpleMeal>1</Diet_CanSimpleMeal>
+		</products>
+		<workAmount>300</workAmount>
+	</RecipeDef>
+	<!-- =====Cannibal Meal Bulk===== -->
+	<RecipeDef Name="Diet_CanSimpleBulk" ParentName="Diet_CanMealCook">
+		<defName>Diet_CanSimpleBulk</defName>
+		<label>Simple Cannibal Meal x4</label>
+		<description>Cook 4 simple meals containing at least one piece of human meat per meal. Disallow human meat in recipe menu to limit meals to 1 piece of human meat.</description>
+		<jobString>Cooking 4 simple cannibal meals</jobString>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>FoodRaw</li>
+				  </categories>
+				</filter>
+				<count>1.8</count>
+			  </li>
+		</ingredients>
+		<products>
+			<Diet_CanSimpleMeal>4</Diet_CanSimpleMeal>
+		</products>
+		<workAmount>1200</workAmount>
+	</RecipeDef>
+</Defs>

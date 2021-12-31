@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Diet Cannibal Meals</name>
+	<author>GayRobot69</author>
+	<packageId>GayRobot.DietCannibalism</packageId>
+	<supportedVersions>
+		<li>1.3</li>
+	</supportedVersions>
+	
+	<description>Have a colony of cannibals that eat the bodies of their victims too quickly? Put them on a diet!
+	
+This mod adds a new type of simple meal created from a minimum of 1 human meat. These meals can then be limited to exactly 1 human meat per meal by disallowing human meat in the bills menu.
+	</description>
+</ModMetaData>
