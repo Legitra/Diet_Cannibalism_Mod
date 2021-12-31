@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+	<!-- =====SIMPLE===== -->
 	<ThingDef ParentName="MealCooked">
 		<defName>Diet_CanSimpleMeal</defName>
 		<label>Simple Cannibal Meal</label>
@@ -19,5 +20,49 @@
 		  <ingestSound>Meal_Eat</ingestSound>
 		</ingestible>
 		<tradeability>Sellable</tradeability>
+	</ThingDef>
+	<!-- =====FINE===== -->
+	<ThingDef ParentName="MealCooked">
+		<defName>Diet_CanFineMeal</defName>
+		<label>Fine Cannibal Meal</label>
+		<description>Fine meal cooked with 2 pieces of human meat, mixed with other meats and veg.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/Fine</texPath>
+			<graphicClass>Graphic_MealVariants</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>20</MarketValue>
+			<WorkToMake>450</WorkToMake>
+			<Nutrition>0.9</Nutrition>
+		</statBases>
+		<ingestible>
+			<preferability>MealFine</preferability>
+			<tasteThought>AteFineMeal</tasteThought>
+			<ingestEffect>EatVegetarian</ingestEffect>
+			<ingestSound>Meal_Eat</ingestSound>
+		</ingestible>
+		<tradeability>Sellable</tradeability>
+	</ThingDef>
+	<!-- =====LAVISH===== -->
+	<ThingDef ParentName="MealCooked">
+    <defName>Diet_CanLavishMeal</defName>
+    <label>Lavish Cannibal Meal</label>
+    <description>Lavish cannibal meal cooked from 4 pieces of human meat, mixed with other meats and veg.</description>
+    <graphicData>
+		<texPath>Things/Item/Meal/Lavish</texPath>
+		<graphicClass>Graphic_MealVariants</graphicClass>
+    </graphicData>
+    <statBases>
+		<MarketValue>40</MarketValue>
+		<WorkToMake>800</WorkToMake>
+		<Nutrition>1.00</Nutrition>
+    </statBases>
+    <ingestible>
+		<preferability>MealLavish</preferability>
+		<tasteThought>AteLavishMeal</tasteThought>
+		<ingestEffect>EatVegetarian</ingestEffect>
+		<ingestSound>Meal_Eat</ingestSound>
+    </ingestible>
+    <tradeability>Sellable</tradeability>
 	</ThingDef>
 </Defs>
