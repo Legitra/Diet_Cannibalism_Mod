@@ -35,14 +35,14 @@
 		</defaultIngredientFilter>
 	</RecipeDef>
 	<!-- ===== =====Crafting Sources===== ===== -->
-	<RecipeDef Name="Diet_CanMealCook" ParentName="Diet_CanMealCampfire" Abstract="True">
+	<RecipeDef Name="Diet_CanMealCampfire" ParentName="Diet_CanMealBase" Abstract="True">
 		<recipeUsers>
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
 			<li>Campfire</li>
 		</recipeUsers>
 	</RecipeDef>
-	<RecipeDef Name="Diet_CanMealCook" ParentName="Diet_CanMealStove" Abstract="True">
+	<RecipeDef Name="Diet_CanMealStove" ParentName="Diet_CanMealBase" Abstract="True">
 		<recipeUsers>
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
@@ -81,7 +81,7 @@
 	<!-- =====FINE===== -->
 	<RecipeDef Name="Diet_CanFineMeal" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanFineMeal</defName>
-		<label>Simple Cannibal Meal</label>
+		<label>Fine Cannibal Meal</label>
 		<description>Cook a fine meal containing at least 2 pieces of human meat.</description>
 		<jobString>Cooking a fine cannibal meal</jobString>
 		<ingredients>
@@ -193,7 +193,7 @@
 	<!-- =====FINE===== -->
 	<RecipeDef Name="Diet_CanFineMealBulk" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanFineMealBulk</defName>
-		<label>Simple Cannibal Meal x4</label>
+		<label>Fine Cannibal Meal x4</label>
 		<description>Cook 4 fine meals containing at least 2 pieces of human meat per meal.</description>
 		<jobString>Cooking 4 fine cannibal meals</jobString>
 		<ingredients>
