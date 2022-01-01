@@ -5,8 +5,6 @@ Simple cannibal meals require 1 human meat + anything else.
 Fine cannibal meals require 2 human meat + other meats + veg.
 lavish cannibal meals require 4 human meat + other meats + veg.
 
-Heavily Referenced [CannibalMeals from Mlie](https://github.com/emipa606/CannibalMeals) while writing this.
-
 |                 	  | Simple            | Fine                                        | Lavish                                    |
 |---------------------|-------------------|---------------------------------------------|-------------------------------------------|
 | Human Meat Nutrition| 0.05              | 0.1                                         | 0.2                                       |
