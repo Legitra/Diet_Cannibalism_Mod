@@ -13,12 +13,12 @@
 	<!-- ===== =====Base Ingredients===== ===== -->
 	<RecipeDef Name="Diet_CanMealBase" ParentName="Diet_CanMealBaseDef" Abstract="True">
 		<fixedIngredientFilter>
-			<thingDefs>
-				<li>Meat_Human</li>
-			</thingDefs>
 			<categories>
 				<li>FoodRaw</li>
 			</categories>
+			<disallowedThingDefs>
+				<li>Meat_Human</li>
+			</disallowedThingDefs>
 		</fixedIngredientFilter>
 		<defaultIngredientFilter>
 			<categories>
@@ -29,7 +29,6 @@
 			</disallowedCategories>
 			<disallowedThingDefs>
 				<li>InsectJelly</li>
-				<li>Meat_Human</li>
 				<li>Meat_Megaspider</li>
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
@@ -66,12 +65,15 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>FoodRaw</li>
-				  </categories>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>0.45</count>
-			  </li>
+			</li>
 		</ingredients>
 		<products>
 			<Diet_CanSimpleMeal>1</Diet_CanSimpleMeal>
@@ -82,7 +84,7 @@
 	<RecipeDef Name="Diet_CanFineMeal" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanFineMeal</defName>
 		<label>Fine Cannibal Meal</label>
-		<description>Cook a fine meal containing at least 2 pieces of human meat.</description>
+		<description>Cook a fine meal containing 2 pieces of human meat.</description>
 		<jobString>Cooking a fine cannibal meal</jobString>
 		<ingredients>
 			<li>
@@ -95,18 +97,21 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>MeatRaw</li>
-					<li>AnimalProductRaw</li>
-				  </categories>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>0.24</count>
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>PlantFoodRaw</li>
-				  </categories>
+					<categories>
+						<li>PlantFoodRaw</li>
+					</categories>
 				</filter>
 				<count>0.25</count>
 			</li>
@@ -123,7 +128,7 @@
 	<RecipeDef Name="Diet_CanLavishMeal" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanLavishMeal</defName>
 		<label>Lavish Cannibal Meal</label>
-		<description>Cook a lavish meal containing at least 4 pieces of human meat.</description>
+		<description>Cook a lavish meal containing 4 pieces of human meat.</description>
 		<jobString>Cooking a lavish cannibal meal</jobString>
 		<ingredients>
 			<li>
@@ -136,10 +141,13 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>MeatRaw</li>
-					<li>AnimalProductRaw</li>
-				  </categories>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>0.3</count>
 			</li>
@@ -165,7 +173,7 @@
 	<RecipeDef Name="Diet_CanSimpleBulk" ParentName="Diet_CanMealCampfire">
 		<defName>Diet_CanSimpleBulk</defName>
 		<label>Simple Cannibal Meal x4</label>
-		<description>Cook 4 simple meals containing at least 1 piece of human meat per meal.</description>
+		<description>Cook 4 simple meals containing 1 piece of human meat per meal.</description>
 		<jobString>Cooking 4 simple cannibal meals</jobString>
 		<ingredients>
 			<li>
@@ -178,9 +186,12 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>FoodRaw</li>
-				  </categories>
+					<categories>
+						<li>FoodRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>1.8</count>
 			  </li>
@@ -194,7 +205,7 @@
 	<RecipeDef Name="Diet_CanFineMealBulk" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanFineMealBulk</defName>
 		<label>Fine Cannibal Meal x4</label>
-		<description>Cook 4 fine meals containing at least 2 pieces of human meat per meal.</description>
+		<description>Cook 4 fine meals containing 2 pieces of human meat per meal.</description>
 		<jobString>Cooking 4 fine cannibal meals</jobString>
 		<ingredients>
 			<li>
@@ -207,10 +218,13 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>MeatRaw</li>
-					<li>AnimalProductRaw</li>
-				  </categories>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>0.96</count>
 			</li>
@@ -220,7 +234,7 @@
 					<li>PlantFoodRaw</li>
 				  </categories>
 				</filter>
-				<count>0.1</count>
+				<count>1</count>
 			</li>
 		</ingredients>
 		<products>
@@ -235,7 +249,7 @@
 	<RecipeDef Name="Diet_CanLavishMealBulk" ParentName="Diet_CanMealStove">
 		<defName>Diet_CanLavishMealBulk</defName>
 		<label>Lavish Cannibal Meal x4</label>
-		<description>Cook 4 lavish meals containing at least 4 pieces of human meat per meal.</description>
+		<description>Cook 4 lavish meals containing 4 pieces of human meat per meal.</description>
 		<jobString>Cooking 4 lavish cannibal meals</jobString>
 		<ingredients>
 			<li>
@@ -248,10 +262,13 @@
 			</li>
 			<li>
 				<filter>
-				  <categories>
-					<li>MeatRaw</li>
-					<li>AnimalProductRaw</li>
-				  </categories>
+					<categories>
+						<li>MeatRaw</li>
+						<li>AnimalProductRaw</li>
+					</categories>
+					<disallowedThingDefs>
+						<li>Meat_Human</li>
+					</disallowedThingDefs>
 				</filter>
 				<count>1.2</count>
 			</li>
