@@ -26,6 +26,7 @@ Disallowing human meat in bills menu will disallow the meals from using any more
 Referenced [CannibalMeals from Mlie](https://github.com/emipa606/CannibalMeals) and the game's xml files while writing this.
 
 ### Changes
-Version 1.0.0 - Added Simple Meals  
-Version 1.1.0 - Added Fine and Lavish Meals  
-Version 1.2.0 - Removed redundant lines / changed ThingDefs and RecipeDefs to look more like CORE files. Added carnivore meals. Updated Preview.
+1.0.0 - Added Simple Meals  
+1.1.0 - Added Fine and Lavish Meals  
+1.2.0 - Removed redundant lines / changed ThingDefs and RecipeDefs to look more like CORE files. Added carnivore meals. Updated Preview.  
+1.2.1 - Fixed link in About.txt and added PublishedFileID.txt.  
