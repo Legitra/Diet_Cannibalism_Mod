@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- =====FINE===== -->
+	<ThingDef ParentName="MealFineBase">
+		<defName>Diet_CanCarnFineMeal</defName>
+		<label>Fine Cannibal Carnivore Meal</label>
+		<description>Fine meal cooked with 2 pieces of human meat, mixed with other meats.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/FineMeat</texPath>
+			<graphicClass>Graphic_MealVariants</graphicClass>
+		</graphicData>
+		<comps>
+		  <li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+		  </li>
+		</comps>
+	</ThingDef>
+	<!-- ===== LAVISH ===== -->
+	<ThingDef ParentName="MealLavishBase">
+		<defName>Diet_CanCarnLavishMeal</defName>
+		<label>Lavish Cannibal Carnivore Meal</label>
+		<description>Lavish meal cooked with 4 pieces of human meat, mixed with other meats.</description>
+		<graphicData>
+			<texPath>Things/Item/Meal/LavishMeat</texPath>
+			<graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<comps>
+		<li Class="CompProperties_Ingredients">
+			<noIngredientsFoodKind>Meat</noIngredientsFoodKind>
+		</li>
+		</comps>
+	</ThingDef>
+</Defs>

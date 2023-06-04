@@ -34,27 +34,18 @@
 			</disallowedThingDefs>
 		</defaultIngredientFilter>
 	</RecipeDef>
-	<!-- ===== =====Crafting Sources===== ===== -->
-	<RecipeDef Name="Diet_CanMealCampfire" ParentName="Diet_CanMealBase" Abstract="True">
+	<!-- ===== =====Single Meals===== ===== -->
+	<!-- =====SIMPLE===== -->
+	<RecipeDef Name="Diet_CanSimpleMeal" ParentName="Diet_CanMealBase">
+		<defName>Diet_CanSimpleMeal</defName>
+		<label>Simple Cannibal Meal</label>
+		<description>Cook a simple meal containing at least 1 piece of human meat.</description>
+		<jobString>Cooking a simple cannibal meal</jobString>
 		<recipeUsers>
 			<li>ElectricStove</li>
 			<li>FueledStove</li>
 			<li>Campfire</li>
 		</recipeUsers>
-	</RecipeDef>
-	<RecipeDef Name="Diet_CanMealStove" ParentName="Diet_CanMealBase" Abstract="True">
-		<recipeUsers>
-			<li>ElectricStove</li>
-			<li>FueledStove</li>
-		</recipeUsers>
-	</RecipeDef>
-	<!-- ===== =====Single Meals===== ===== -->
-	<!-- =====SIMPLE===== -->
-	<RecipeDef Name="Diet_CanSimpleMeal" ParentName="Diet_CanMealCampfire">
-		<defName>Diet_CanSimpleMeal</defName>
-		<label>Simple Cannibal Meal</label>
-		<description>Cook a simple meal containing at least 1 piece of human meat.</description>
-		<jobString>Cooking a simple cannibal meal</jobString>
 		<ingredients>
 			<li>
 				<filter>
@@ -79,11 +70,15 @@
 		<workAmount>300</workAmount>
 	</RecipeDef>
 	<!-- =====FINE===== -->
-	<RecipeDef Name="Diet_CanFineMeal" ParentName="Diet_CanMealStove">
+	<RecipeDef Name="Diet_CanFineMeal" ParentName="Diet_CanMealBase">
 		<defName>Diet_CanFineMeal</defName>
 		<label>Fine Cannibal Meal</label>
 		<description>Cook a fine meal containing at least 2 pieces of human meat.</description>
 		<jobString>Cooking a fine cannibal meal</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -120,11 +115,15 @@
 		</skillRequirements>
 	</RecipeDef>
 	<!-- =====LAVISH===== -->
-	<RecipeDef Name="Diet_CanLavishMeal" ParentName="Diet_CanMealStove">
+	<RecipeDef Name="Diet_CanLavishMeal" ParentName="Diet_CanMealBase">
 		<defName>Diet_CanLavishMeal</defName>
 		<label>Lavish Cannibal Meal</label>
 		<description>Cook a lavish meal containing at least 4 pieces of human meat.</description>
 		<jobString>Cooking a lavish cannibal meal</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -162,11 +161,16 @@
 	</RecipeDef>
 	<!-- ===== =====Bulk Meals===== ===== -->
 	<!-- =====SIMPLE===== -->
-	<RecipeDef Name="Diet_CanSimpleBulk" ParentName="Diet_CanMealCampfire">
+	<RecipeDef Name="Diet_CanSimpleBulk" ParentName="Diet_CanMealBase">
 		<defName>Diet_CanSimpleBulk</defName>
 		<label>Simple Cannibal Meal x4</label>
 		<description>Cook 4 simple meals containing at least 1 piece of human meat per meal.</description>
 		<jobString>Cooking 4 simple cannibal meals</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+			<li>Campfire</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -191,11 +195,15 @@
 		<workAmount>1200</workAmount>
 	</RecipeDef>
 	<!-- =====FINE===== -->
-	<RecipeDef Name="Diet_CanFineMealBulk" ParentName="Diet_CanMealStove">
+	<RecipeDef Name="Diet_CanFineMealBulk" ParentName="Diet_CanMealBase">
 		<defName>Diet_CanFineMealBulk</defName>
 		<label>Fine Cannibal Meal x4</label>
 		<description>Cook 4 fine meals containing at least 2 pieces of human meat per meal.</description>
 		<jobString>Cooking 4 fine cannibal meals</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>
@@ -232,11 +240,15 @@
 		</skillRequirements>
 	</RecipeDef>
 	<!-- =====LAVISH===== -->
-	<RecipeDef Name="Diet_CanLavishMealBulk" ParentName="Diet_CanMealStove">
+	<RecipeDef Name="Diet_CanLavishMealBulk" ParentName="Diet_CanMealBase">
 		<defName>Diet_CanLavishMealBulk</defName>
 		<label>Lavish Cannibal Meal x4</label>
 		<description>Cook 4 lavish meals containing at least 4 pieces of human meat per meal.</description>
 		<jobString>Cooking 4 lavish cannibal meals</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
 		<ingredients>
 			<li>
 				<filter>

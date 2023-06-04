@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ===== =====Base Ingredients===== ===== -->
+		<RecipeDef Name="Diet_CanCarnMealBase" ParentName="Diet_CanMealBaseDef" Abstract="True">
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>Meat_Human</li>
+			</thingDefs>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>MeatRaw</li>
+				<li>AnimalProductRaw</li>
+			</categories>
+			<disallowedCategories>
+				<li>EggsFertilized</li>
+			</disallowedCategories>
+			<disallowedThingDefs>
+				<li>InsectJelly</li>
+				<li>Meat_Human</li>
+				<li>Meat_Megaspider</li>
+			</disallowedThingDefs>
+		</defaultIngredientFilter>
+	</RecipeDef>
+	<!-- ===== =====Single Meals===== ===== -->
+	<!-- ===== FINE ===== -->
+	<RecipeDef Name="Diet_CanCarnFineMeal" ParentName="Diet_CanCarnMealBase">
+		<defName>Diet_CanCarnFineMeal</defName>
+		<label>Fine Cannibal Carnivore Meal</label>
+		<description>Cook a fine carnivore meal containing at least 2 pieces of human meat.</description>
+		<jobString>Cooking a fine cannibal carnivore meal</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.10</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>0.65</count>
+			</li>
+		</ingredients>
+		<products>
+			<Diet_CanCarnFineMeal>1</Diet_CanCarnFineMeal>
+		</products>
+		<workAmount>450</workAmount>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ===== LAVISH ===== -->
+	<RecipeDef Name="Diet_CanCarnLavishMeal" ParentName="Diet_CanCarnMealBase">
+		<defName>Diet_CanCarnLavishMeal</defName>
+		<label>Lavish Cannibal Carnivore Meal</label>
+		<description>Cook a lavish carivore meal containing at least 4 pieces of human meat.</description>
+		<jobString>Cooking a lavish cannibal carnivore meal</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.2</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>1.05</count>
+			</li>
+		</ingredients>
+		<products>
+			<Diet_CanCarnLavishMeal>1</Diet_CanCarnLavishMeal>
+		</products>
+		<workAmount>800</workAmount>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ===== =====Bulk Meals===== ===== -->
+	<!-- ===== FINE ===== -->
+	<RecipeDef Name="Diet_CanCarnFineMealBulk" ParentName="Diet_CanCarnMealBase">
+		<defName>Diet_CanCarnFineMealBulk</defName>
+		<label>4x Fine Cannibal Carnivore Meal</label>
+		<description>Cook 4 fine carnivore meals containing at least 2 pieces of human meat.</description>
+		<jobString>Cooking 4 fine cannibal carnivore meals</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.40</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>2.6</count>
+			</li>
+		</ingredients>
+		<products>
+			<Diet_CanCarnFineMeal>4</Diet_CanCarnFineMeal>
+		</products>
+		<workAmount>1800</workAmount>
+		<skillRequirements>
+			<Cooking>6</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+	<!-- ===== LAVISH ===== -->
+	<RecipeDef Name="Diet_CanCarnLavishMealBulk" ParentName="Diet_CanCarnMealBase">
+		<defName>Diet_CanCarnLavishMealBulk</defName>
+		<label>4x Lavish Cannibal Carnivore Meal</label>
+		<description>Cook 4 lavish carivore meals containing at least 4 pieces of human meat.</description>
+		<jobString>Cooking 4 lavish cannibal carnivore meals</jobString>
+		<recipeUsers>
+			<li>ElectricStove</li>
+			<li>FueledStove</li>
+		</recipeUsers>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>Meat_Human</li>
+					</thingDefs>
+				</filter>
+				<count>0.8</count>
+			</li>
+			<li>
+				<filter>
+				  <categories>
+					<li>MeatRaw</li>
+					<li>AnimalProductRaw</li>
+				  </categories>
+				</filter>
+				<count>4.20</count>
+			</li>
+		</ingredients>
+		<products>
+			<Diet_CanCarnLavishMeal>4</Diet_CanCarnLavishMeal>
+		</products>
+		<workAmount>3200</workAmount>
+		<skillRequirements>
+			<Cooking>8</Cooking>
+		</skillRequirements>
+	</RecipeDef>
+</Defs>
